@@ -1,8 +1,8 @@
 <%= partial 'partials/header' %>
   <body>
-    <div class="container grid-container" data-animsition-overlay="true">
+    <div class="container grid-container">
       <%= partial 'partials/navbar' %>     
-      <div class="main-menu">
+      <div class="main-menu slide-in-left">
         <ul class="main-menu-list">
           <li class="main-menu-item"><a href="/">Web</a></li>
           <li class="main-menu-item"><a href="/">Print</a></li>
@@ -11,7 +11,7 @@
           <li class="main-menu-item"><a href="/">Etc</a></li>
         </ul>
       </div>
-      <div class="main-content slide-in">
+      <div class="main-content slide-in-right">
         <%= yield %>
       </div>
     </div>
