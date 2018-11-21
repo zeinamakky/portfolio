@@ -1,1 +1,13 @@
-print.html.erb
+---
+layout: inside
+title: Print Design &amp; Illustration
+---
+
+<div class="grid-auto">
+  <% data.print.each do |image| %>
+    <div class="box-img">
+      <img src="<%= image.url %>" alt="<%= image.title %>" />
+    </div>
+  <% end %>
+
+</div>

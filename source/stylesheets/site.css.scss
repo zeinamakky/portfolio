@@ -180,6 +180,17 @@ a {
 .main-content-inside {
   display: none;
 }
+///////////////images /////////////////////////
+.box-img {
+  overflow: hidden;
+}
+.box-img > img {
+  transition: all .4s;
+  width: 100%;
+}
+.box-img:hover img {
+  transform: scale(1.2);
+}
 
 ///////////////modules ////////////////////////
 
