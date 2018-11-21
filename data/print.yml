@@ -1,15 +1,151 @@
-- url: /images/print/entree-wine.jpg
-  title: Section cover about wine
+- url: /images/print/1a-fatal.jpg
+  title: Front page of newspaper with story on a gang's fatal intersection with a police officer
+  auto: true
+
+- url: /images/print/cue-african.jpg
+  title: African World Fest section cover (African mask illustration)
+  auto: true
+
+- url: /images/print/cue-arab.jpg
+  title: Arab World Fest section cover (hand of Fatma illustration)
+  auto: false
+  position: 1
+
+- url: /images/print/cue-bastille.jpg
+  title: Bastille Days section cover (Marie Antoinette illustration)
+  auto: true
+
+- url: /images/print/cue-festa.jpg
+  title: Festa Italiana section cover (Fun photo illustration of David holding an Italian flag and eating a pizza slice)
+  auto: true
 
 
-- url: /images/print/entree-wine.jpg
-  title: Section cover about wine
+- url: /images/print/cue-lincoln.jpg
+  title: Illustration of Abraham Lincoln
+  auto: true
+
+- url: /images/print/cue-mommies.jpg
+  title: Section cover with story on bad mothers in pop culture
+  auto: true  
+
+- url: /images/print/cue-prideometer.jpg
+  title: Infographic rating the various depictions of characters in Pride &amp; Prejudice in pop culture
+  auto: true
+
+- url: /images/print/entree-cardamom.jpg
+  title: Section cover about cardamom
+  auto: true
+
+- url: /images/print/entree-circus.jpg
+  title: Section cover on circus foods
+  auto: true
+
+- url: /images/print/entree-color.jpg
+  title: Section cover using bold colors in your home furnishings
+  auto: true
+
+- url: /images/print/entree-dollar.jpg
+  title: Section cover on what you can get at the dollar store
+  auto: true
+
+- url: /images/print/entree-herbs.jpg
+  title: Section cover on planting and using herbs
+  auto: true
+
+- url: /images/print/entree-macarons.jpg
+  title: Section cover on macarons
+  auto: true
+
+- url: /images/print/entree-newplants.jpg
+  title: Section cover on planting new plants
+  auto: true
+
+- url: /images/print/entree-noodles.jpg
+  title: Section cover on the many different kinds of Asian noodles
+  auto: true
+
+- url: /images/print/entree-plantnames.jpg
+  title: Section cover on how plants got their strange names
+  auto: true
+
+- url: /images/print/entree-roots.jpg
+  title: Section cover on how to use vegetable roots and fronds
+  auto: true
+
+- url: /images/print/entree-sauce.jpg
+  title: Section cover on delicious sauces
+  auto: true
 
 - url: /images/print/entree-wine.jpg
-  title: Section cover about wine
+  title: Section cover on the Wine & Dine event
+  auto: false
+  position: 2
 
-- url: /images/print/entree-wine.jpg
-  title: Section cover about wine
+- url: /images/print/entree-winedine.jpg
+  title: Section cover on the Wine & Dine event
+  auto: true
 
-- url: /images/print/entree-wine.jpg
-  title: Section cover about wine
+- url: /images/print/entree-yogurt.jpg
+  title: Section cover on the benefits of yogurt
+  auto: true
+
+- url: /images/print/food-super.jpg
+  title: Section cover on how to throw a great super bowl party
+  auto: auto
+
+- url: /images/print/food-turkey.jpg
+  title: Section cover on Thanksgiving turkey dinner
+  auto: true
+
+- url: /images/print/fresh-dairy.jpg
+  title: Section cover on what makes Wisconsin the Dairy State
+  auto: true
+
+- url: /images/print/mke-film.jpg
+  title: 4-page spread on a story about a filmmaker whose first film debuted at the Milwaukee Film Festival
+  auto: false
+  position: 3
+
+- url: /images/print/species-elephant.jpg
+  title: Infographic on the elephant, part of a series on endangered species
+  auto: true
+
+- url: /images/print/taste-toydogs.jpg
+  title: Section cover on the appeal of toy dogs
+  auto: true
+
+- url: /images/print/wcue-garbage.jpg
+  title: Section cover on the music band Garbage
+  auto: true
+
+- url: /images/print/wcue-heart.jpg
+  title: Section cover on various plays about heartbreak
+  auto: true
+
+- url: /images/print/wcue-horror.jpg
+  title: Section cover on horror movies
+  auto: true
+
+- url: /images/print/wcue-holidayshows.jpg
+  title: Section cover on holiday shows around town
+  auto: true
+
+- url: /images/print/wcue-outdoormovies.jpg
+  title: Section cover on outdoor movies in town
+  auto: true
+
+- url: /images/print/wcue-top30.jpg
+  title: Section cover on the top 30 restaurants in Milwaukee
+  auto: true
+
+- url: /images/print/wcue-valentine.jpg
+  title: Section cover on Valentine's Day events
+  auto: true 
+
+- url: /images/print/wcue-valentinehearts.jpg
+  title: Section cover on last-minute Valentine's Day gifts
+  auto: true
+
+- url: /images/print/wcue-xmasmovies.jpg
+  title: Section cover on holiday movies
+  auto: true  
