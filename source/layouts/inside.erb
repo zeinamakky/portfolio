@@ -1,0 +1,16 @@
+<%= partial 'partials/header' %>
+  <body>
+    <div class="container grid-container-inside" data-animsition-overlay="true">
+      <%= partial 'partials/navbar' %>      
+
+      <div class="main-content slide-in">
+        <%= yield %>
+      </div>
+    </div>
+
+    <div class="footer">
+
+    </div>
+  </body>
+
+</html>

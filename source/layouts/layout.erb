@@ -1,0 +1,25 @@
+<%= partial 'partials/header' %>
+  <body>
+    <div class="container grid-container" data-animsition-overlay="true">
+      <%= partial 'partials/navbar' %>     
+      <div class="main-menu">
+        <ul class="main-menu-list">
+          <li class="main-menu-item"><a href="/">Web</a></li>
+          <li class="main-menu-item"><a href="/">Print</a></li>
+          <li class="main-menu-item"><a href="/video">Video</a></li>
+          <li class="main-menu-item"><a href="/">Lettering</a></li>
+          <li class="main-menu-item"><a href="/">Etc</a></li>
+        </ul>
+      </div>
+      <div class="main-content slide-in">
+        <%= yield %>
+      </div>
+    </div>
+
+    <div class="footer">
+
+    </div>
+  </body>
+
+</html>
+<%= partial 'partials/bottom-script' %>

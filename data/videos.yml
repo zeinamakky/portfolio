@@ -1,0 +1,23 @@
+- name: app tutorial
+  url: https://www.youtube.com/embed/lQRM4q2gFKk
+  caption: caption goes here
+
+- name: reasons
+  url: https://www.youtube.com/embed/14fmOxITKn8
+  caption: caption goes here
+
+- name: networking 101
+  url: https://www.youtube.com/embed/_Y8k0-6Lkds
+  caption: caption goes here
+
+- name: conference tips
+  url: https://www.youtube.com/embed/iQH-1GXBzfA
+  caption: caption goes here
+
+- name: intro
+  url: https://www.youtube.com/embed/LoAjk0GE_YI
+  caption: caption goes here
+
+- name: cat
+  url: https://www.youtube.com/embed/NkZcnZZOrdE
+  caption: caption goes here

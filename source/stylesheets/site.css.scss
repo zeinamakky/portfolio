@@ -1,0 +1,235 @@
+@import 'grid.css';
+@import url('https://fonts.googleapis.com/css?family=Raleway:500,700|Roboto+Slab');
+$font-serif: 'Roboto Slab';
+$font-sans: 'Raleway';
+
+$type-color-hed: #690878;
+$type-color-main: #666666;
+$type-color-secondary: #aaaaaa;
+
+body {
+  background-color: #ffffff;
+  font-family: $font-serif;
+  padding: 1rem;
+}
+body, p, ul, ol {
+  color: $type-color-main;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $type-color-hed;
+}
+
+
+a {
+  color: $type-color-secondary;
+  text-decoration: none;
+  transition: .5s ease;
+
+  &:focus,
+  &:hover {
+    color: rgba($type-color-hed, 1);
+  }
+}
+
+///////////////// navbar ////////////////////
+.navbar {
+  border-bottom: 1px solid $type-color-secondary;
+  font-family: $font-sans;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.navbar-menu-open {
+  display: inline-block;
+  float: right;
+  -webkit-margin-before: 1em;
+  margin-block-start: 1em;
+}
+.navbar-menu-list {
+  display: none;
+  list-style-type: none;
+  padding-inline-start: 0px;
+}
+
+.navbar-menu-item {
+  border-bottom: 1px solid $type-color-secondary;
+  display: block;
+  transition: .5s ease;
+  & a {
+    display: block;
+    padding: 10px 10px 10px 0;
+  }
+  & a:hover{
+    background-color: $type-color-secondary;
+    color: $type-color-hed;
+    padding-left: 10px;
+    &:before {
+      content: "\2192";
+    }
+  }
+}
+.navbar-menu-item:last-child {
+  border-bottom: none;
+}
+
+.navbar-title {
+  display: inline-block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+  .navbar-title-2 {
+    display: none;
+  }
+/////////////// main menu //////////////////
+.main-menu {
+  font-family: $font-sans;
+  font-size: 42px;
+  font-weight: 800;
+  text-align: right;
+  text-transform: uppercase;
+}
+.main-menu-list {
+  list-style-type: none;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  padding-inline-start: 0px;
+}
+.main-menu-item {
+  padding: 10px 0;
+  position: relative;
+}
+.main-menu-item:first-child {
+  padding-top: 0;
+}
+.main-menu-item > a {
+  display: inline-block;
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 0;
+    height: 5px;
+    background: transparent;
+    border-bottom: 5px solid transparent;
+  }
+  &:hover:before {
+    animation: animate .5s linear forwards;
+  }
+}
+
+@keyframes animate {
+  0% {
+    width: 5px;
+    height: 5px;
+    border-bottom-color: transparent;
+  }
+  100% {
+    width: 70%;
+    height: 5px;
+    border-bottom-color: $type-color-hed;
+  }
+}
+///******* main menu for inside template *******
+.slide-in {
+  animation: slidein .25s linear forwards
+}
+
+@keyframes slidein {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+/////////////// main area /////////////////////
+.main-content {
+  padding-top: 30px;
+  & > p:first-child{
+    margin-block-start: 0em;
+  }
+  & > h1:first-child {
+    margin-block-start: 0em;
+  }
+}
+.main-content-inside {
+  display: none;
+}
+
+///////////////modules ////////////////////////
+
+.card {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 40px;
+  margin-bottom: 30px;
+}
+
+.card-image {
+  grid-column: 1/3;
+}
+
+.card-blurb {
+  grid-column: 3;
+}
+/////////////// states ////////////////////////
+.open {
+  &:after {
+    content: "\276E";
+    display: inline-block;
+    transform: rotate(-90deg);
+  }
+}
+.close {
+  &:after {
+    content: "\276E";
+    display: inline-block;
+    transform: rotate(90deg);
+
+  }
+}
+/////////////// desktop ////////////////////////
+
+@media only screen and (min-width: 700px) {
+  .navbar-title-2 {
+    display: inline;
+  }
+  .navbar-menu-open {
+    display: none;
+  }
+  .navbar-menu-list {
+    display: inline-block;
+    float: right;
+    list-style-type: none;
+  }
+  .navbar-menu-item {
+    border-bottom: none;
+    display: inline-block;
+    padding: 0 0 0 30px;
+    & a {
+      padding: 0;
+    }
+    & a:hover {
+      background-color: #ffffff;
+      color: $type-color-hed;
+      padding: 0;
+
+      &:before {
+        content: "";
+      }
+    }
+  }
+
+
+
+}
