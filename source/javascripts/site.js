@@ -16,3 +16,4 @@
         }
       }).data('smoothState'); // makes public methods available
 })(jQuery);
+

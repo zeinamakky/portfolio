@@ -1,0 +1,862 @@
+h1 class="headline">Interactive quiz: Which movie should you see this summer?</h1>
+                                <div>
+    <style type="text/css">
+#flowchart {
+  background-image:url(http://media.jrn.com/images/summermovieflowchart-bg2.png);
+  background-repeat:no-repeat;
+  background-color:#e0ffff;
+  font-family:Georgia, "Times New Roman", Times, serif;
+  font-size:12px;
+  position:relative;
+  width:960px;
+  height:830px;
+  margin: 20px auto 10px auto;
+  top:0px;
+  left:0;
+  
+  }
+  #flowchart_footer {
+  font-family:Verdana, Geneva, sans-serif;
+  font-size:9px;
+  font-style:italic;
+  color:#999;
+    position:absolute;
+    right:5px;
+  top:815px;
+}
+
+
+
+.main_article #flowchart .reply_start a:link, .main_article #flowchart .reply a:link, .main_article #flowchart .reply_start a:visited, .main_article #flowchart .reply a:visited {
+color: #457587 !important;
+ 
+  text-decoration:none;
+}
+.main_article #flowchart .reply_start a:hover, .main_article #flowchart .reply a:hover,
+.main_article #flowchart .reply_start a:hover, .main_article #flowchart .reply a:hover{
+  color:#294a47;  !important;
+  text-decoration:none;
+}
+
+
+.qanda {
+  visibility:hidden;}
+  
+.question {
+  padding:5 5 5 5;
+  width:105px;
+  height:77px;
+  text-align:center;
+  vertical-align:middle;
+  
+  }
+.question_start {
+  width:110px;
+  height:77px;
+  text-align:center;
+  vertical-align:middle;
+    }
+.reply {
+  font-size:10px;
+  text-align:center;
+  vertical-align:middle;
+}
+.reply_start {
+  font-size:10px;
+  text-align:center;
+  vertical-align:middle;
+}
+
+.results {
+  visibility:hidden;
+}
+
+.img-result {
+ border-radius: 40px;
+ -webkit-border-radius:40px;
+ -moz-border-radius: 40px;
+ border:1px solid #000;
+}
+
+#result_compton
+{position:absolute;
+top:90px;
+left:846px;
+}
+
+#result_holmes
+{position:absolute;
+top:177px;
+left:846px;
+}
+
+#result_saintlaurent
+{position:absolute;
+top:263px;
+left:846px;
+}
+#result_sanandreas
+{position:absolute;
+top:397px;
+left:846px;
+}
+#result_paper
+{position:absolute;
+top:485px;
+left:846px;
+}
+#result_spy
+{position:absolute;
+top:570px;
+left:846px;
+}
+
+
+
+#result_train
+{position:absolute;
+top:664px;
+left:767px;
+}
+
+#result_ted
+{position:absolute;
+top:664px;
+left:682px;
+}
+#result_inside
+{position:absolute;
+top:664px;
+left:598px;
+}
+#result_minions
+{position:absolute;
+top:664px;
+left:512px;
+}
+#result_mission
+{position:absolute;
+top:664px;
+left:412px;
+}
+#result_poltergeist
+{position:absolute;
+top:664px;
+left:327px;
+}
+#result_magic
+{position:absolute;
+top:664px;
+left:241px;
+}
+#result_pitch
+{position:absolute;
+top:664px;
+left:157px;
+}
+
+#result_terminator
+{position:absolute;
+top:537px;
+left:36px;
+}
+
+#result_madmax
+{position:absolute;
+top:449px;
+left:36px;
+}
+#result_jurassic
+{position:absolute;
+top:624px;
+left:36px;
+}
+#result_fantastic
+{position:absolute;
+top:306px;
+left:36px;
+}
+#result_avengers
+{position:absolute;
+top:219px;
+left:36px;
+}
+#result_antman
+{position:absolute;
+top:130px;
+left:36px;
+}
+
+#q_start {
+  position:absolute;
+  top:90px;
+  left:422px;
+  }
+#q_comics {
+  position:absolute;
+  top:90px;
+  left:230px;
+  }
+#q_four {
+  position:absolute;
+  top:244px;
+  left:175px;
+  }
+  
+#q_future {
+  position:absolute;
+  top:244px;
+  left:299px;
+  }
+#q_machine {
+  position:absolute;
+  top:467px;
+  left:222px;
+  }
+#q_singing {
+  position:absolute;
+  top:397px;
+  left:350px;
+  } 
+#q_80smovie {
+  position:absolute;
+  top:517px;
+  left:418px;
+  } 
+#q_lol {
+  position:absolute;
+  top:244px;
+  left:435px;
+  }
+#q_animations {
+  position:absolute;
+  top:348px;
+  left:545px;
+  }
+#q_yellow {
+  position:absolute;
+  top:462px;
+  left:545px;
+  }
+#q_comedy {
+  position:absolute;
+  top:498px;
+  left:675px;
+  }
+#q_bios {
+  position:absolute;
+  top:244px;
+  left:618px;
+  }
+    
+#q_lookup {
+  position:absolute;
+  top:103px;
+  left:614px;
+  }
+  
+#q_disaster {
+  position:absolute;
+  top:325px;
+  left:734px;
+  }
+#a_start_yes {
+  position:absolute;
+  top:102px;
+  left:357px;
+  width: 52px;
+  height: 28px;
+}
+#a_start_no {
+  position:absolute;
+  top:190px;
+  left:452px;
+  width: 52px;
+  height: 28px;
+}
+#a_comics_yes {
+  position:absolute;
+  top:188px;
+  left:227px;
+  width: 52px;
+  height: 28px;
+}
+#a_comics_no {
+  position:absolute;
+  top:179px;
+  left:295px;
+  width: 57px;
+  height: 58px;
+}
+#a_four_ant {
+  position:absolute;
+  top:148px;
+  left:122px;
+  width: 41px;
+  height: 41px;
+}
+#a_four_avengers {
+  position:absolute;
+  top:236px;
+  left:120px;
+  width: 44px;
+  height: 28px;
+}
+#a_four_fantastic {
+  position:absolute;
+  top:331px;
+  left:120px;
+  width: 52px;
+  height: 28px;
+}
+#a_future_yes {
+  position:absolute;
+  top:355px;
+  left:274px;
+  width: 52px;
+  height: 28px;
+}
+#a_future_no {
+  position:absolute;
+  top:355px;
+  left:367px;
+  width: 57px;
+  height: 28px;
+}
+#a_machine_man {
+  position:absolute;
+  top:472px;
+  left:154px;
+  width: 57px;
+  height: 28px;
+}
+#a_machine_machine {
+  position:absolute;
+  top:510px;
+  left:152px;
+  width: 57px;
+  height: 28px;
+}
+#a_machine_neither {
+  position:absolute;
+  top:556px;
+  left:209px;
+  width: 57px;
+  height: 28px;
+}
+#a_singing_yes {
+  position:absolute;
+  top:513px;
+  left:342px;
+  width: 50px;
+  height: 64px;
+}
+#a_singing_no {
+  position:absolute;
+  top:483px;
+  left:445px;
+  width: 57px;
+  height: 28px;
+}
+#a_80smovie_dd {
+  position:absolute;
+  top:593px;
+  left:377px;
+  width: 57px;
+  height: 28px;
+}
+#a_80smovie_shining {
+  position:absolute;
+  top:593px;
+  left:433px;
+  width: 57px;
+  height: 28px;
+}
+
+#a_80smovie_topgun {
+  position:absolute;
+  top:593px;
+  left:502px;
+  width: 27px;
+  height: 28px;
+}
+#a_lol_yes {
+  position:absolute;
+  top:336px;
+  left:454px;
+  width: 57px;
+  height: 28px;
+}
+#a_lol_no {
+  position:absolute;
+  top:261px;
+  left:554px;
+  width: 57px;
+  height: 28px;
+}
+#a_animations_everyone {
+  position:absolute;
+  top:429px;
+  left:570px;
+  width: 57px;
+  height: 28px;
+}
+#a_animations_kids {
+  position:absolute;
+  top:397px;
+  left:665px;
+  width: 57px;
+  height: 28px;
+}
+#a_yellow_yes {
+  position:absolute;
+  top:555px;
+  left:537px;
+  width: 27px;
+  height: 28px;
+}
+#a_yellow_no {
+  position:absolute;
+  top:555px;
+  left:593px;
+  width: 27px;
+  height: 28px;
+}
+
+#a_comedy_rude {
+  position:absolute;
+  top:626px;
+  left:696px;
+  width: 57px;
+  height: 28px;
+}
+#a_comedy_snarky {
+  position:absolute;
+  top:588px;
+  left:734px;
+  width: 57px;
+  height: 28px;
+}
+#a_comedy_broad {
+  position:absolute;
+  top:574px;
+  left:804px;
+  width: 37px;
+  height: 28px;
+}
+#a_bios_yes {
+  position:absolute;
+  top:202px;
+  left:639px;
+  width: 64px;
+  height: 28px;
+}
+#a_bios_no {
+  position:absolute;
+  top:262px;
+  left:738px;
+  width: 40px;
+  height: 28px;
+}
+#a_lookup_super {
+  position:absolute;
+  top:62px;
+  left:746px;
+  width: 64px;
+  height: 28px;
+}
+#a_lookup_musicians {
+  position:absolute;
+  top:119px;
+  left:746px;
+  width: 58px;
+  height: 28px;
+}
+#a_lookup_detectives {
+  position:absolute;
+  top:154px;
+  left:746px;
+  width: 58px;
+  height: 28px;
+}
+#a_lookup_designers {
+  position:absolute;
+  top:198px;
+  left:746px;
+  width: 58px;
+  height: 28px;
+}
+#a_disaster_read {
+  position:absolute;
+  top:420px;
+  left:772px;
+  width: 58px;
+  height: 48px;
+}
+#a_disaster_stay {
+  position:absolute;
+  top:345px;
+  left:860px;
+  width: 51px;
+  height: 30px;
+}
+span.caption { background: rgba(0,0,0,0.8);
+  color: white;
+  font-size: 11px;
+  position:absolute;
+  top:0px;
+  left:0px;
+  opacity: 0;
+  width:60px;
+  height:60px;
+  padding:10px;
+    text-align: center;
+    vertical-align: middle;
+  border-radius: 40px;
+ -webkit-border-radius:40px;
+ -moz-border-radius: 40px;
+   -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+span.caption span {
+  position:relative;
+  left:0px;
+  top:15px;
+  width:50px;
+  text-align: center;
+    vertical-align: middle;
+
+}
+.results:hover span.caption {
+  opacity:1;
+}
+#reveal {
+  position:absolute;
+  top:790px;
+  text-align:center;
+  font-family:Verdana, Geneva, sans-serif;
+  font-size:14px;
+  text-transform:uppercase;
+  margin-left:50%;
+  margin-right:50%;
+}
+</style>
+<div id="flowchart">
+
+  <div class="question_start" id="q_start">
+    <p>How do you feel about sequels?</p>
+    </div>
+        <div class="reply_start" id="a_start_yes"> 
+      <p> <a href="javascript:ShowContent('qanda_comics')">Bring<br> them on!</a></p>
+        </div>
+        <div class="reply_start" id="a_start_no"> 
+       <p> <a href="javascript:ShowContent('qanda_lol')">Eh.</a></p>
+        </div>
+        
+              
+<div id="qanda_comics" class="qanda">   
+    <div class="question" id="q_comics">
+     <p> What about comics?</p>
+     </div>
+    <div class="reply" id="a_comics_yes"> 
+     <p><a href="javascript:ShowContent('qanda_four')"> Love 'em.</a></p>
+     </div>
+      <div class="reply" id="a_comics_no"> 
+       <p> <a href="javascript:ShowContent('qanda_future')">They aren't really books, you know.</a></p>
+        </div>
+      </div>  
+            
+<div id="qanda_four" class="qanda">
+    <div class="question" id="q_four">
+   <p> If two's company and three's a crowd, four is...</p>
+    </div>
+      <div class="reply" id="a_four_ant"> 
+       <p> <a href="javascript:ShowContent('result_antman')">three too many.</a></p>
+        </div>
+      <div class="reply" id="a_four_avengers"> 
+       <p> <a href="javascript:ShowContent('result_avengers')">not enough.</a></p>
+        </div>
+        <div class="reply" id="a_four_fantastic"> 
+       <p> <a href="javascript:ShowContent('result_fantastic')">perfect.</a></p>
+        </div>
+</div>
+
+<div id="qanda_future" class="qanda">    
+    <div class="question" id="q_future">
+   <p> Do you think about the future?</p>
+    </div>
+      <div class="reply" id="a_future_yes"> 
+       <p> <a href="javascript:ShowContent('qanda_machine')">All the time.</a></p>
+        </div>
+        <div class="reply" id="a_future_no"> 
+       <p> <a href="javascript:ShowContent('qanda_singing')">I live in the present.</a></p>
+        </div>
+</div>
+
+<div id="qanda_machine" class="qanda"> 
+    <div class="question" id="q_machine">
+   <p> Who wins the battle of man vs. machine?</p>
+    </div>
+      <div class="reply" id="a_machine_man"> 
+       <p> <a href="javascript:ShowContent('result_madmax')">Man.</a></p>
+        </div>
+        <div class="reply" id="a_machine_machine"> 
+       <p> <a href="javascript:ShowContent('result_terminator')">Machine.</a></p>
+        </div>
+        <div class="reply" id="a_machine_neither"> 
+       <p> <a href="javascript:ShowContent('result_jurassic')">Neither.</a></p>
+        </div>
+</div>
+
+<div id="qanda_singing" class="qanda">     
+    <div class="question" id="q_singing">
+   <p> Do you sing under the shower?</p>
+    </div>
+        <div class="reply" id="a_singing_yes"> 
+      <p>  <a href="javascript:ShowContent('result_pitch')">Like I'm auditioning for The Voice.</a></p>
+        </div>
+        <div class="reply" id="a_singing_no"> 
+       <p> <a href="javascript:ShowContent('qanda_80smovie')">Nah.</a></p>
+        </div>       
+</div>
+
+<div id="qanda_80smovie" class="qanda">    
+    <div class="question" id="q_80smovie">
+   <p> Your favorite 80's movie was...</p>
+    </div>
+      <div class="reply" id="a_80smovie_dd"> 
+        <p><a href="javascript:ShowContent('result_magic')">"Dirty Dancing"</a></p>
+        </div> 
+        <div class="reply" id="a_80smovie_shining"> 
+        <p><a href="javascript:ShowContent('result_poltergeist')">"The Shining"</a></p>
+        </div>  
+        <div class="reply" id="a_80smovie_topgun"> 
+        <p><a href="javascript:ShowContent('result_mission')">"Top Gun"</a></p>
+        </div>    
+</div>
+
+<div id="qanda_lol" class="qanda">    
+    <div class="question" id="q_lol">
+    <p>Are you actually laughing when you type LOL?</p>
+    </div>
+      <div class="reply" id="a_lol_yes"> 
+       <p> <a href="javascript:ShowContent('qanda_animations')">Always.</a></p>
+        </div>  
+        <div class="reply" id="a_lol_no"> 
+       <p> <a href="javascript:ShowContent('qanda_bios')">Never.</a></p>
+        </div>  
+</div>
+
+<div id="qanda_animations" class="qanda">     
+    <div class="question" id="q_animations">
+   <p> Animated movies are for...</p>
+    </div>
+        <div class="reply" id="a_animations_everyone"> 
+       <p> <a href="javascript:ShowContent('qanda_yellow')">Everyone.</a></p>
+        </div>  
+        <div class="reply" id="a_animations_kids"> 
+       <p> <a href="javascript:ShowContent('qanda_comedy')">Kids.</a></p>
+        </div> 
+</div>
+
+<div id="qanda_yellow" class="qanda">     
+    <div class="question" id="q_yellow">
+   <p> Do you like the color yellow?</p>
+    </div>
+      <div class="reply" id="a_yellow_yes"> 
+       <p> <a href="javascript:ShowContent('result_minions')">Yes.</a></p>
+        </div>
+        <div class="reply" id="a_yellow_no"> 
+       <p> <a href="javascript:ShowContent('result_inside')">No.</a></p>
+        </div> 
+</div>
+
+<div id="qanda_comedy" class="qanda">     
+    <div class="question" id="q_comedy">
+    <p>You like your comedy...</p>
+    </div>
+     <div class="reply" id="a_comedy_rude"> 
+      <p>  <a href="javascript:ShowContent('result_ted')">Rude.</a></p>
+        </div>
+        <div class="reply" id="a_comedy_snarky"> 
+      <p>  <a href="javascript:ShowContent('result_train')">Snarky.</a></p>
+        </div>
+        <div class="reply" id="a_comedy_broad"> 
+      <p>  <a href="javascript:ShowContent('result_spy')">Broad.</a></p>
+        </div>
+</div>
+
+<div id="qanda_bios" class="qanda">     
+    <div class="question" id="q_bios">
+  <p>  Biographies are...</p>
+    </div>
+      <div class="reply" id="a_bios_yes"> 
+      <p>  <a href="javascript:ShowContent('qanda_lookup')">fascinating.</a></p>
+        </div>
+        <div class="reply" id="a_bios_no"> 
+       <p> <a href="javascript:ShowContent('qanda_disaster')">Oscar bait.</a></p>
+        </div>
+</div>
+
+<div id="qanda_lookup" class="qanda">     
+    <div class="question" id="q_lookup">
+   <p> You look up to...</p>
+    </div>
+      <div class="reply" id="a_lookup_musicians"> 
+        <p><a href="javascript:ShowContent('result_compton')">musicians.</a></p>
+        </div>
+        <div class="reply" id="a_lookup_detectives"> 
+        <p><a href="javascript:ShowContent('result_holmes')">detectives.</a></p>
+        </div>
+        <div class="reply" id="a_lookup_designers"> 
+        <p><a href="javascript:ShowContent('result_saintlaurent')">designers.</a></p>
+        </div>
+ </div>
+ 
+ 
+ <div id="qanda_disaster" class="qanda">    
+   <div class="question" id="q_disaster">
+   <p> If a disaster struck, you would...</p>
+    </div>
+      <div class="reply" id="a_disaster_read"> 
+      <p> <a href="javascript:ShowContent('result_paper')">be too busy reading the latest John Green novel to notice.</a></p>
+        </div>
+        <div class="reply" id="a_disaster_stay"> 
+        <p><a href="javascript:ShowContent('result_sanandreas')">stay and help.</a></p>
+        </div>
+ </div>   
+    
+<div class="results" id="result_antman">
+<img src="/Services/image.ashx?domain=www.jsonline.com&file=summermovies_antman.jpg&resize=" class="img-result">
+<span class="caption"><span>"Ant-Man"</span></span>
+</div>
+
+<div class="results" id="result_avengers">
+<img src="/Services/image.ashx?domain=www.jsonline.com&file=summermovies_avengers.jpg&resize=" class="img-result">
+<span class="caption"><span>"Avengers: Age of Ultron"</span></span>
+</div>
+
+<div class="results" id="result_fantastic">
+<img src="/Services/image.ashx?domain=www.jsonline.com&file=summermovies_fantastic.jpg&resize=" class="img-result">
+<span class="caption"><span>"Fantastic Four"</span></span>
+</div>
+    
+<div class="results" id="result_madmax">
+<img src="/Services/image.ashx?domain=www.jsonline.com&file=summermovies_madmax.jpg&resize=" class="img-result">
+<span class="caption"><span>"Mad Max: Fury Road"</span></span>
+</div>
+
+<div class="results" id="result_terminator">
+<img src="/Services/image.ashx?domain=www.jsonline.com&file=summermovies_terminator.jpg&resize=" class="img-result">
+<span class="caption"><span>"Terminator: Genisys"</span></span>
+</div>
+
+<div class="results" id="result_jurassic">
+<img src="/Services/image.ashx?domain=www.jsonline.com&file=summermovies_jurassic.jpg&resize=" class="img-result">
+<span class="caption"><span>"Jurassic World"</span></span>
+</div>    
+    
+    
+<div class="results" id="result_pitch">
+<img src="/Services/image.ashx?domain=www.jsonline.com&file=summermovies_pitch.jpg&resize=" class="img-result">
+<span class="caption"><span>"Pitch Perfect 2"</span></span>
+</div>
+
+<div class="results" id="result_magic">
+<img src="/Services/image.ashx?domain=www.jsonline.com&file=summermovies_magic.jpg&resize=" class="img-result">
+<span class="caption"><span>"Magic Mike XXL"</span></span>
+</div>
+
+<div class="results" id="result_poltergeist">
+<img src="/Services/image.ashx?domain=www.jsonline.com&file=summermovies_poltergeist.jpg&resize=" class="img-result">
+<span class="caption"><span>"Poltergeist"</span></span>
+</div>
+
+<div class="results" id="result_mission">
+<img src="/Services/image.ashx?domain=www.jsonline.com&file=summermovies_mission.jpg&resize=" class="img-result">
+<span class="caption"><span>"Mission Impossible: Rogue Nation"</span></span>
+</div>
+
+<div class="results" id="result_minions">
+<img src="/Services/image.ashx?domain=www.jsonline.com&file=summermovies_minions.jpg&resize=" class="img-result">
+<span class="caption"><span>"Minions"</span></span>
+</div>
+
+<div class="results" id="result_inside">
+<img src="/Services/image.ashx?domain=www.jsonline.com&file=summermovies_inside.jpg&resize=" class="img-result">
+<span class="caption"><span>"Inside Out"</span></span>
+</div>
+
+<div class="results" id="result_ted">
+<img src="/Services/image.ashx?domain=www.jsonline.com&file=summermovies_ted.jpg&resize=" class="img-result">
+<span class="caption"><span>"Ted 2"</span></span>
+</div>
+
+<div class="results" id="result_train">
+<img src="/Services/image.ashx?domain=www.jsonline.com&file=summermovies_train.jpg&resize=" class="img-result">
+<span class="caption"><span>"Trainwreck"</span></span>
+</div>
+
+<div class="results" id="result_spy">
+<img src="/Services/image.ashx?domain=www.jsonline.com&file=summermovies_spy.jpg&resize=" class="img-result">
+<span class="caption"><span>"Spy"</span></span>
+</div>
+
+
+<div class="results" id="result_compton">
+<img src="/Services/image.ashx?domain=www.jsonline.com&file=summermovies_compton.jpg&resize=" class="img-result">
+<span class="caption"><span>"Straight Outta Compton"</span></span>
+</div>
+
+<div class="results" id="result_holmes">
+<img src="/Services/image.ashx?domain=www.jsonline.com&file=summermovies_holmes.jpg&resize=" class="img-result">
+<span class="caption"><span>"Mr. Holmes"</span></span>
+</div>
+
+<div class="results" id="result_saintlaurent">
+<img src="/Services/image.ashx?domain=www.jsonline.com&file=summermovies_saintlaurent.jpg&resize=" class="img-result">
+<span class="caption"><span>"Saint Laurent"</span></span>
+</div>
+
+<div class="results" id="result_paper">
+<img src="/Services/image.ashx?domain=www.jsonline.com&file=summermovies_paper.jpg&resize=" class="img-result">
+<span class="caption"><span>"Paper Towns"</span></span>
+</div>
+
+<div class="results" id="result_sanandreas">
+<img src="/Services/image.ashx?domain=www.jsonline.com&file=summermovies_sanandreas.jpg&resize=" class="img-result">
+<span class="caption"><span>"San Andreas"</span></span>
+</div>
+
+  <div id="reveal"><a id="showall">Reveal all?</a></div>
+   
+<div id="flowchart_footer">Interactive by Zeina Makky/zmakky@journalsentinel.com</div>
+</div>
+   
+   
+
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+<script type="text/javascript" language="JavaScript"><!--
+
+function ShowContent(d) {
+document.getElementById(d).style.visibility = "visible";
+}
+jQuery(function(){
+         jQuery('#showall').click(function(){
+               jQuery('.results').css("visibility", "visible");
+       
+        });
+       
+});
+//--></script>
+
+          </div>
+          
+
+
+        <span fd-type="end" fd-id="default"></span>
+    </div>
+    <div style="clear:both;"></div>
