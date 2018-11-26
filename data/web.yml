@@ -18,20 +18,24 @@
   caption: My final project from bootcamp. I never uploaded it, hence the video. Built in Rails, used AngularJS and Bootstrap for the front-end stuff. The purpose of such an app would be to connect soccer fans with pubs in their areas and show which pubs were affiliated with which teams. Also included was a schedule of upcoming games.
   link_url: 
 
-# - title: TAP Milwaukee
-#   img_url: tap-desktop.jpg
-#   caption: A hypothetical redesign of the Milwaukee Journal Sentinel's entertainment website, prior to its acquisition by Gannett.
-#   link_url: 
+- title: TAP Milwaukee
+  img_url: tap-desktop.jpg
+  caption: A hypothetical redesign of the Milwaukee Journal Sentinel's entertainment website, prior to its acquisition by Gannett.
+  link_url:
+  height: height='500px'
+  width: width="auto"
+
 
 # - title: TAP Milwaukee
 #   img_url: tap-mobile.jpg
 #   caption: Mobile version of the previous.
 #   link_url:
+#   height: height='500px'
 
 - title: What movie should you see? flowchart
   img_url: movies-flowchart.jpg
-  caption: A fun guide to help indecisive movie goers. Written and coded by me.
-  link_url:
+  caption: A fun guide to help indecisive movie goers. Written and coded by me. This no longer works on the JSonline site but I recreated it here.
+  link_url: http://zeinamakky.com/flow
 
 - title: Superheroes, Villains and Their Secret Identities
   img_url: super-identities.jpg
@@ -46,7 +50,7 @@
 - title: Darcys Game
   img_url: darcys.jpg
   caption: A little Flash game done for a class.
-  link_url: http://zeinamakky.com/darcys
+  link_url: http://zeinamakky.com/darcys.html
 
 - title: LadyModa
   img_url: ladymoda.jpg

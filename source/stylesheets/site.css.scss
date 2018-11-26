@@ -75,7 +75,7 @@ a {
     display: block;
     padding: 10px 10px 10px 0;
   }
-  & a:hover{
+  & a:active{
     background-color: $type-color-secondary;
     color: $type-color-hed;
     padding-left: 10px;
@@ -227,8 +227,8 @@ a {
 }
 .card {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-gap: 40px;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
   margin-bottom: 30px;
 }
 input, textarea {
@@ -309,6 +309,10 @@ input.btn-submit {
         content: "";
       }
     }
+  }
+  .card {
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 40px;
   }
 
 
