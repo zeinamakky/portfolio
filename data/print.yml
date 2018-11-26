@@ -1,3 +1,14 @@
+
+- url: /images/print/book-warrior.jpg
+  title: Book cover illustration of a boxer
+  auto: false
+  position: 4
+
+- url: /images/print/book-cookies.jpg
+  title: Holiday cookies book cover
+  auto: false
+  position: 5
+
 - url: /images/print/1a-fatal.jpg
   title: Front page of newspaper with story on a gang's fatal intersection with a police officer
   auto: true

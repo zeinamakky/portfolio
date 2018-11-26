@@ -1,0 +1,1 @@
+!function(t){"use strict";var n=t(".container").smoothState({onStart:{render:function(){n.toggleAnimationClass("is-exiting")}}}).data("smoothState")}(jQuery);

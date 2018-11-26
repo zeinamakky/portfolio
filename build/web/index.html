@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title>Web Design &amp; Development</title>
+    <link href="/stylesheets/site.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/javascripts/jquery.smoothState.min.js"></script>
+
+
+    
+    <script src="/javascripts/site.js"></script>
+  </head>
+
+  <body>
+    <div class="container grid-container-inside">
+            <div class="navbar">
+        <span class="navbar-title">
+          <a href="/">ZM <span class="navbar-title-2">| Print &amp; Web design &amp; development</span></a>
+        </span>
+        <span class="navbar-menu-open open">
+          MENU
+        </span>
+        <ul class="navbar-menu-list">
+          <li class="navbar-menu-item"><a href="/web">Web</a></li>
+          <li class="navbar-menu-item"><a href="/print">Print</a></li>
+          <li class="navbar-menu-item"><a href="/video">Video</a></li>
+          <!-- <li class="navbar-menu-item"><a href="/lettering">Lettering</a></li> -->
+          <!-- <li class="navbar-menu-item"><a href="/etc">Etc</a></li> -->
+          <li class="navbar-menu-item"><a href="/resume">Resume</a></li>
+          <li class="navbar-menu-item"><a href="/contact">Contact</a></li>
+        </ul>
+      </div>       
+
+      <div class="main-content slide-in-right">
+          <div class="card reveal-me">
+    <div card="card-image">
+        <img src="images/web/2018forum.jpg" />
+    </div>
+    <div class="card-caption">
+      <p>Website for PAEA's annual conference. Built in Middleman, using Grid, list.js for some of the sorting, lunr.js for the search function.</p>
+       <p><a href="https://forum.paeaonline.org" target="_blank">Visit the site</a></p>
+
+    </div>
+  </div>
+  
+  <div class="card reveal-me">
+    <div card="card-image">
+        <img src="images/web/2016review.jpg" />
+    </div>
+    <div class="card-caption">
+      <p>Website for PAEA's annual conference. Built in Middleman with Bootstrap. This was the first online annual report PAEA had done.</p>
+       <p><a href="https://2016review.paeaonline.org" target="_blank">Visit the site</a></p>
+
+    </div>
+  </div>
+  
+  <div class="card reveal-me">
+    <div card="card-image">
+        <img src="images/web/2017forum.jpg" />
+    </div>
+    <div class="card-caption">
+      <p>Website for PAEA's annual conference. Built in Middleman, using Bootstrap, lunr.js for the search function.</p>
+       <p><a href="https://2017forum.paeaonline.org" target="_blank">Visit the site</a></p>
+
+    </div>
+  </div>
+  
+  <div class="card reveal-me">
+    <div card="card-image">
+        <div 
+          class="lazyframe"
+          data-src="https://www.youtube.com/watch?v=bDonCu2cwzI"
+          data-vendor="youtube">
+        </div>
+    </div>
+    <div class="card-caption">
+      <p>My final project from bootcamp. I never uploaded it, hence the video. Built in Rails, used AngularJS and Bootstrap for the front-end stuff. The purpose of such an app would be to connect soccer fans with pubs in their areas and show which pubs were affiliated with which teams. Also included was a schedule of upcoming games.</p>
+
+    </div>
+  </div>
+  
+  <div class="card reveal-me">
+    <div card="card-image">
+        <img src="images/web/movies-flowchart.jpg" />
+    </div>
+    <div class="card-caption">
+      <p>A fun guide to help indecisive movie goers. Written and coded by me.</p>
+
+    </div>
+  </div>
+  
+  <div class="card reveal-me">
+    <div card="card-image">
+        <img src="images/web/super-identities.jpg" />
+    </div>
+    <div class="card-caption">
+      <p>A timed game to match superheroes to their identities.</p>
+
+    </div>
+  </div>
+  
+  <div class="card reveal-me">
+    <div card="card-image">
+        <img src="images/web/lespetitesgooners.jpg" />
+    </div>
+    <div class="card-caption">
+      <p>A Flash website for a class project a while ago.</p>
+       <p><a href="http://zeinamakky.com/lpg" target="_blank">Visit the site</a></p>
+
+    </div>
+  </div>
+  
+  <div class="card reveal-me">
+    <div card="card-image">
+        <img src="images/web/darcys.jpg" />
+    </div>
+    <div class="card-caption">
+      <p>A little Flash game done for a class.</p>
+       <p><a href="http://zeinamakky.com/darcys" target="_blank">Visit the site</a></p>
+
+    </div>
+  </div>
+  
+  <div class="card reveal-me">
+    <div card="card-image">
+        <img src="images/web/ladymoda.jpg" />
+    </div>
+    <div class="card-caption">
+      <p>A site for a small jewelry business, with Paypal integration. It was built using some PHP, in 2010 or 2011. Now defunct.</p>
+
+    </div>
+  </div>
+  
+
+      </div>
+    </div>
+
+    <div class="footer">
+
+    </div>
+  </body>
+
+</html>
+<script type="text/javascript">
+
+
+
+  $( ".navbar-menu-open" ).click(function() {
+    $( ".navbar-menu-list" ).toggle( "slow", function() {
+      // Animation complete.
+    });
+    $(this).toggleClass('close');
+    $(this).toggleClass('open');
+
+    
+  });
+
+(function($) {
+
+  /**
+   * Copyright 2012, Digital Fusion
+   * Licensed under the MIT license.
+   * http://teamdf.com/jquery-plugins/license/
+   *
+   * @author Sam Sehnert
+   * @desc A small plugin that checks whether elements are within
+   *     the user visible viewport of a web browser.
+   *     only accounts for vertical position, not horizontal.
+   */
+
+  $.fn.visible = function(partial) {
+    
+      var $t            = $(this),
+          $w            = $(window),
+          viewTop       = $w.scrollTop(),
+          viewBottom    = viewTop + $w.height(),
+          _top          = $t.offset().top,
+          _bottom       = _top + $t.height(),
+          compareTop    = partial === true ? _bottom : _top,
+          compareBottom = partial === true ? _top : _bottom;
+    
+    return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+  };
+    
+})(jQuery);
+
+var win = $(window);
+
+var allMods = $(".reveal-me");
+
+allMods.each(function(i, el) {
+  var el = $(el);
+  if (el.visible(true)) {
+    el.addClass("already-visible"); 
+  } 
+});
+
+win.scroll(function(event) {
+  
+  allMods.each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("reveal"); 
+    } 
+  });
+  
+});
+</script>  
+<script type="text/javascript" src="/javascripts/lazyframe.min.js"></script>
+<script>
+  lazyframe('.lazyframe');
+</script>

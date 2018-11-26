@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title>Video</title>
+    <link href="/stylesheets/site.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/javascripts/jquery.smoothState.min.js"></script>
+
+
+    
+    <script src="/javascripts/site.js"></script>
+  </head>
+
+  <body>
+    <div class="container grid-container-inside">
+            <div class="navbar">
+        <span class="navbar-title">
+          <a href="/">ZM <span class="navbar-title-2">| Print &amp; Web design &amp; development</span></a>
+        </span>
+        <span class="navbar-menu-open open">
+          MENU
+        </span>
+        <ul class="navbar-menu-list">
+          <li class="navbar-menu-item"><a href="/web">Web</a></li>
+          <li class="navbar-menu-item"><a href="/print">Print</a></li>
+          <li class="navbar-menu-item"><a href="/video">Video</a></li>
+          <!-- <li class="navbar-menu-item"><a href="/lettering">Lettering</a></li> -->
+          <!-- <li class="navbar-menu-item"><a href="/etc">Etc</a></li> -->
+          <li class="navbar-menu-item"><a href="/resume">Resume</a></li>
+          <li class="navbar-menu-item"><a href="/contact">Contact</a></li>
+        </ul>
+      </div>       
+
+      <div class="main-content slide-in-right">
+          <div class="card reveal-me">
+    <div>
+      <div 
+        class="lazyframe"
+        data-src="https://www.youtube.com/embed/lQRM4q2gFKk"
+        data-vendor="youtube">
+      </div>
+      <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/lQRM4q2gFKk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    </div>
+    <div class="card-caption">
+      A video I made to help attendees download and use our conference app
+    </div>
+  </div>
+  
+  <div class="card reveal-me">
+    <div>
+      <div 
+        class="lazyframe"
+        data-src="https://www.youtube.com/embed/14fmOxITKn8"
+        data-vendor="youtube">
+      </div>
+      <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/14fmOxITKn8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    </div>
+    <div class="card-caption">
+      Promotion video for the annual conference. Done in Photoshop.
+    </div>
+  </div>
+  
+  <div class="card reveal-me">
+    <div>
+      <div 
+        class="lazyframe"
+        data-src="https://www.youtube.com/embed/_Y8k0-6Lkds"
+        data-vendor="youtube">
+      </div>
+      <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/_Y8k0-6Lkds" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    </div>
+    <div class="card-caption">
+      A fun, gif-based video to help boost engagement on our social media, leading up to the conference.
+    </div>
+  </div>
+  
+  <div class="card reveal-me">
+    <div>
+      <div 
+        class="lazyframe"
+        data-src="https://www.youtube.com/embed/iQH-1GXBzfA"
+        data-vendor="youtube">
+      </div>
+      <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/iQH-1GXBzfA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    </div>
+    <div class="card-caption">
+      Another gif-based video, also done in iMovie.
+    </div>
+  </div>
+  
+  <div class="card reveal-me">
+    <div>
+      <div 
+        class="lazyframe"
+        data-src="https://www.youtube.com/embed/LoAjk0GE_YI"
+        data-vendor="youtube">
+      </div>
+      <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/LoAjk0GE_YI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    </div>
+    <div class="card-caption">
+      After-Effects class project as an intro for a potential web show with the Milwaukee Journal Sentinel's movie critic.
+    </div>
+  </div>
+  
+  <div class="card reveal-me">
+    <div>
+      <div 
+        class="lazyframe"
+        data-src="https://www.youtube.com/embed/NkZcnZZOrdE"
+        data-vendor="youtube">
+      </div>
+      <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/NkZcnZZOrdE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    </div>
+    <div class="card-caption">
+      Another After-Effects class project that I story-boarded then executed. This depicts the quasi-real story of me finding a kitten in the window well in my building.
+    </div>
+  </div>
+  
+
+
+      </div>
+    </div>
+
+    <div class="footer">
+
+    </div>
+  </body>
+
+</html>
+<script type="text/javascript">
+
+
+
+  $( ".navbar-menu-open" ).click(function() {
+    $( ".navbar-menu-list" ).toggle( "slow", function() {
+      // Animation complete.
+    });
+    $(this).toggleClass('close');
+    $(this).toggleClass('open');
+
+    
+  });
+
+(function($) {
+
+  /**
+   * Copyright 2012, Digital Fusion
+   * Licensed under the MIT license.
+   * http://teamdf.com/jquery-plugins/license/
+   *
+   * @author Sam Sehnert
+   * @desc A small plugin that checks whether elements are within
+   *     the user visible viewport of a web browser.
+   *     only accounts for vertical position, not horizontal.
+   */
+
+  $.fn.visible = function(partial) {
+    
+      var $t            = $(this),
+          $w            = $(window),
+          viewTop       = $w.scrollTop(),
+          viewBottom    = viewTop + $w.height(),
+          _top          = $t.offset().top,
+          _bottom       = _top + $t.height(),
+          compareTop    = partial === true ? _bottom : _top,
+          compareBottom = partial === true ? _top : _bottom;
+    
+    return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+  };
+    
+})(jQuery);
+
+var win = $(window);
+
+var allMods = $(".reveal-me");
+
+allMods.each(function(i, el) {
+  var el = $(el);
+  if (el.visible(true)) {
+    el.addClass("already-visible"); 
+  } 
+});
+
+win.scroll(function(event) {
+  
+  allMods.each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("reveal"); 
+    } 
+  });
+  
+});
+</script>  
+<script type="text/javascript" src="/javascripts/lazyframe.min.js"></script>
+<script>
+  lazyframe('.lazyframe');
+</script>

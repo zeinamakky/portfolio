@@ -2,15 +2,15 @@
 layout: inside
 title: Print Design &amp; Illustration
 ---
-<h1>Print design &amp; Illustration</h1>
+<h1>Print Design &amp; Illustration</h1>
 <div class="grid-auto">
   <% data.print.shuffle.each do |image| %>
     <% if !image.auto %>
-      <div class="box-img grid-auto-set-<%= image.position %>">
+      <div class="box-img grid-auto-set-<%= image.position %> reveal-me">
         <img src="<%= image.url %>" alt="<%= image.title %>" />
       </div>
     <%else%>
-      <div class="box-img">
+      <div class="box-img reveal-me">
         <img src="<%= image.url %>" alt="<%= image.title %>" />
       </div>
     <% end %>

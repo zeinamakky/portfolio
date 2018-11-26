@@ -3,8 +3,8 @@ title: Video
 layout: inside
 ---
 <% data.videos.each do |video| %>
-  <div class="card">
-    <div card="card-image">
+  <div class="card reveal-me">
+    <div>
       <div 
         class="lazyframe"
         data-src="<%= video.url %>"
@@ -19,54 +19,3 @@ layout: inside
   
 <% end %>
 
-<!-- 
-<div class="card">
-  <div card="card-image">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/lQRM4q2gFKk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  <div class="card-caption">
-    caption here
-  </div>
-</div>
-<div class="card">
-  <div card="card-image">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/NkZcnZZOrdE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  <div class="card-caption">
-    caption here
-  </div>
-</div>
-<div class="card">
-  <div card="card-image">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/_Y8k0-6Lkds" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  <div class="card-caption">
-    caption here
-  </div>
-</div>
-<div class="card">
-  <div card="card-image">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/iQH-1GXBzfA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  <div class="card-caption">
-    caption here
-  </div>
-</div>
-<div class="card">
-  <div card="card-image">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/LoAjk0GE_YI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  <div class="card-caption">
-    caption here
-  </div>
-</div>
-<div class="card">
-  <div card="card-image">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/NkZcnZZOrdE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  <div class="card-caption">
-    caption here
-  </div>
-</div>
-
- -->

@@ -1,0 +1,54 @@
+- title: 2018 PAEA Education Forum Conference Website
+  img_url: 2018forum.jpg
+  caption: Website for PAEA's annual conference. Built in Middleman, using Grid, list.js for some of the sorting, lunr.js for the search function.
+  link_url: https://forum.paeaonline.org
+
+- title: 2016 Annual Report Website
+  img_url: 2016review.jpg
+  caption: Website for PAEA's annual conference. Built in Middleman with Bootstrap. This was the first online annual report PAEA had done.
+  link_url: https://2016review.paeaonline.org
+
+- title: 2017 PAEA Education Forum Conference Website
+  img_url: 2017forum.jpg
+  caption: Website for PAEA's annual conference. Built in Middleman, using Bootstrap, lunr.js for the search function.
+  link_url: https://2017forum.paeaonline.org
+
+- title: Soccer Watch
+  video_url: https://www.youtube.com/watch?v=bDonCu2cwzI
+  caption: My final project from bootcamp. I never uploaded it, hence the video. Built in Rails, used AngularJS and Bootstrap for the front-end stuff. The purpose of such an app would be to connect soccer fans with pubs in their areas and show which pubs were affiliated with which teams. Also included was a schedule of upcoming games.
+  link_url: 
+
+# - title: TAP Milwaukee
+#   img_url: tap-desktop.jpg
+#   caption: A hypothetical redesign of the Milwaukee Journal Sentinel's entertainment website, prior to its acquisition by Gannett.
+#   link_url: 
+
+# - title: TAP Milwaukee
+#   img_url: tap-mobile.jpg
+#   caption: Mobile version of the previous.
+#   link_url:
+
+- title: What movie should you see? flowchart
+  img_url: movies-flowchart.jpg
+  caption: A fun guide to help indecisive movie goers. Written and coded by me.
+  link_url:
+
+- title: Superheroes, Villains and Their Secret Identities
+  img_url: super-identities.jpg
+  caption: A timed game to match superheroes to their identities. 
+  link_url: 
+
+- title: Les Petites Gooners
+  img_url: lespetitesgooners.jpg
+  caption: A Flash website for a class project a while ago.
+  link_url: http://zeinamakky.com/lpg
+
+- title: Darcys Game
+  img_url: darcys.jpg
+  caption: A little Flash game done for a class.
+  link_url: http://zeinamakky.com/darcys
+
+- title: LadyModa
+  img_url: ladymoda.jpg
+  caption: A site for a small jewelry business, with Paypal integration. It was built using some PHP, in 2010 or 2011. Now defunct.
+  link_url: 

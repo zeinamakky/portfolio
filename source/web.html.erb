@@ -1,1 +1,28 @@
-web.html.erb
+---
+layout: inside
+title: Web Design &amp; Development
+---
+
+<% data.web.each do |web| %>
+  <div class="card reveal-me">
+    <div card="card-image">
+      <% if web.video_url %>
+        <div 
+          class="lazyframe"
+          data-src="<%= web.video_url %>"
+          data-vendor="youtube">
+        </div>
+      <% else %>
+        <img src="images/web/<%= web.img_url %>" />
+      <% end %>
+    </div>
+    <div class="card-caption">
+      <p><%= web.caption %></p>
+      <% if web.link_url %>
+       <p><a href="<%= web.link_url %>" target="_blank">Visit the site</a></p>
+      <% end %>
+
+    </div>
+  </div>
+  
+<% end %>
