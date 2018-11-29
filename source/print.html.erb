@@ -6,12 +6,15 @@ title: Print Design &amp; Illustration
 <div class="grid-auto">
   <% data.print.shuffle.each do |image| %>
     <% if !image.auto %>
-      <div class="box-img grid-auto-set-<%= image.position %> reveal-me">
+      <div class="box-img grid-auto-set-<%= image.position %> reveal-me tooltip">
         <img src="<%= image.url %>" alt="<%= image.title %>" />
+        <span class="tooltip-text"><%= image.title %></span>
+        
       </div>
     <%else%>
-      <div class="box-img reveal-me">
+      <div class="box-img reveal-me tooltip">
         <img src="<%= image.url %>" alt="<%= image.title %>" />
+        <span class="tooltip-text"><%= image.title %></span>
       </div>
     <% end %>
 

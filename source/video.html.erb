@@ -2,18 +2,21 @@
 title: Video
 layout: inside
 ---
+<h1><%= current_page.data.title %></h1>
 <% data.videos.each do |video| %>
   <div class="card reveal-me">
     <div>
       <div 
         class="lazyframe"
         data-src="<%= video.url %>"
+        data-title="<%= video.name %>"
         data-vendor="youtube">
       </div>
       <!-- <iframe width="560" height="315" src="<%= video.url %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
     </div>
     <div class="card-caption">
-      <%= video.caption %>
+      <h3><%= video.name %></h3>
+      <p><%= video.caption %></p>
     </div>
   </div>
   

@@ -207,7 +207,7 @@ a {
 
 }
 .box-img:hover img {
-  transform: scale(1.2);
+  transform: scale(1.5);
 }
 
 ///////////////modules ////////////////////////
@@ -245,6 +245,22 @@ input {
 input.btn-submit {
   height: 60px;
   width: 50%;
+}
+.tooltip {
+  position: relative;
+}
+.tooltip .tooltip-text {
+  color: white;
+  background-color: rgba($type-color-main, .85);
+  display: none;
+  padding: 20px;
+  position: absolute;
+  top: 40px;
+  width: calc(100% - 40px);
+  z-index: 10;
+}
+.tooltip:hover .tooltip-text {
+  display: block;
 }
 
 

@@ -2,6 +2,7 @@
 layout: inside
 title: Web Design &amp; Development
 ---
+<h1><%= current_page.data.title %></h1>
 
 <% data.web.each do |web| %>
   <div class="card reveal-me">
@@ -17,6 +18,7 @@ title: Web Design &amp; Development
       <% end %>
     </div>
     <div class="card-caption">
+      <h3><%= web.title %></h3>
       <p><%= web.caption %></p>
       <% if web.link_url %>
        <p><a href="<%= web.link_url %>" target="_blank">Visit the site</a></p>

@@ -1,16 +1,16 @@
 - title: 2018 PAEA Education Forum Conference Website
   img_url: 2018forum.jpg
-  caption: Website for PAEA's annual conference. Built in Middleman, using Grid, list.js for some of the sorting, lunr.js for the search function.
+  caption: Website for PAEA's annual conference. Built in Middleman, using CSS Grid, list.js for some of the sorting, lunr.js for the search function.
   link_url: https://forum.paeaonline.org
 
 - title: 2016 Annual Report Website
   img_url: 2016review.jpg
-  caption: Website for PAEA's annual conference. Built in Middleman with Bootstrap. This was the first online annual report PAEA had done.
+  caption: Website for PAEA's annual report. Built in Middleman with Bootstrap. This was the first online annual report PAEA had done.
   link_url: https://2016review.paeaonline.org
 
 - title: 2017 PAEA Education Forum Conference Website
   img_url: 2017forum.jpg
-  caption: Website for PAEA's annual conference. Built in Middleman, using Bootstrap, lunr.js for the search function.
+  caption: Built in Middleman, using Bootstrap, lunr.js for the search function.
   link_url: https://2017forum.paeaonline.org
 
 - title: Soccer Watch
@@ -32,7 +32,7 @@
 #   link_url:
 #   height: height='500px'
 
-- title: What movie should you see? flowchart
+- title: What movie should you see? Flowchart
   img_url: movies-flowchart.jpg
   caption: A fun guide to help indecisive movie goers. Written and coded by me. This no longer works on the JSonline site but I recreated it here.
   link_url: http://zeinamakky.com/flow
@@ -47,7 +47,7 @@
   caption: A Flash website for a class project a while ago.
   link_url: http://zeinamakky.com/lpg
 
-- title: Darcys Game
+- title: Match the Darcys
   img_url: darcys.jpg
   caption: A little Flash game done for a class.
   link_url: http://zeinamakky.com/darcys.html

@@ -743,104 +743,104 @@ span.caption span {
  </div>   
     
 <div class="results" id="result_antman">
-<img src="flow-imgs/antman.jpeg" class="img-result">
+<img src="/images/web/flow-imgs/antman.jpeg" class="img-result">
 <span class="caption"><span>"Ant-Man"</span></span>
 </div>
 
 <div class="results" id="result_avengers">
-<img src="flow-imgs/avengers.jpeg" class="img-result">
+<img src="/images/web/flow-imgs/avengers.jpeg" class="img-result">
 <span class="caption"><span>"Avengers: Age of Ultron"</span></span>
 </div>
 
 <div class="results" id="result_fantastic">
-<img src="flow-imgs/fantastic4.jpeg" class="img-result">
+<img src="/images/web/flow-imgs/fantastic4.jpeg" class="img-result">
 <span class="caption"><span>"Fantastic Four"</span></span>
 </div>
     
 <div class="results" id="result_madmax">
-<img src="flow-imgs/madmax.jpeg" class="img-result">
+<img src="/images/web/flow-imgs/madmax.jpeg" class="img-result">
 <span class="caption"><span>"Mad Max: Fury Road"</span></span>
 </div>
 
 <div class="results" id="result_terminator">
-<img src="flow-imgs/terminator.jpeg" class="img-result">
+<img src="/images/web/flow-imgs/terminator.jpeg" class="img-result">
 <span class="caption"><span>"Terminator: Genisys"</span></span>
 </div>
 
 <div class="results" id="result_jurassic">
-<img src="flow-imgs/jurrassic.jpeg" class="img-result">
+<img src="/images/web/flow-imgs/jurrassic.jpeg" class="img-result">
 <span class="caption"><span>"Jurassic World"</span></span>
 </div>    
     
     
 <div class="results" id="result_pitch">
-<img src="flow-imgs/pitchperfect.jpeg" class="img-result">
+<img src="/images/web/flow-imgs/pitchperfect.jpeg" class="img-result">
 <span class="caption"><span>"Pitch Perfect 2"</span></span>
 </div>
 
 <div class="results" id="result_magic">
-<img src="flow-imgs/magicmike.jpeg" class="img-result">
+<img src="/images/web/flow-imgs/magicmike.jpeg" class="img-result">
 <span class="caption"><span>"Magic Mike XXL"</span></span>
 </div>
 
 <div class="results" id="result_poltergeist">
-<img src="flow-imgs/poltergeist.jpeg" class="img-result">
+<img src="/images/web/flow-imgs/poltergeist.jpeg" class="img-result">
 <span class="caption"><span>"Poltergeist"</span></span>
 </div>
 
 <div class="results" id="result_mission">
-<img src="flow-imgs/missionimpossible.jpeg" class="img-result">
+<img src="/images/web/flow-imgs/missionimpossible.jpeg" class="img-result">
 <span class="caption"><span>"Mission Impossible: Rogue Nation"</span></span>
 </div>
 
 <div class="results" id="result_minions">
-<img src="flow-imgs/minions.jpeg" class="img-result">
+<img src="/images/web/flow-imgs/minions.jpeg" class="img-result">
 <span class="caption"><span>"Minions"</span></span>
 </div>
 
 <div class="results" id="result_inside">
-<img src="flow-imgs/insideout.jpeg" class="img-result">
+<img src="/images/web/flow-imgs/insideout.jpeg" class="img-result">
 <span class="caption"><span>"Inside Out"</span></span>
 </div>
 
 <div class="results" id="result_ted">
-<img src="flow-imgs/ted2.jpeg" class="img-result">
+<img src="/images/web/flow-imgs/ted2.jpeg" class="img-result">
 <span class="caption"><span>"Ted 2"</span></span>
 </div>
 
 <div class="results" id="result_train">
-<img src="flow-imgs/trainwreck.jpeg" class="img-result">
+<img src="/images/web/flow-imgs/trainwreck.jpeg" class="img-result">
 <span class="caption"><span>"Trainwreck"</span></span>
 </div>
 
 <div class="results" id="result_spy">
-<img src="flow-imgs/spy.jpeg" class="img-result">
+<img src="/images/web/flow-imgs/spy.jpeg" class="img-result">
 <span class="caption"><span>"Spy"</span></span>
 </div>
 
 
 <div class="results" id="result_compton">
-<img src="flow-imgs/compton.jpeg" class="img-result">
+<img src="/images/web/flow-imgs/compton.jpeg" class="img-result">
 <span class="caption"><span>"Straight Outta Compton"</span></span>
 </div>
 
 <div class="results" id="result_holmes">
-<img src="flow-imgs/sherlock.jpeg" class="img-result">
+<img src="/images/web/flow-imgs/sherlock.jpeg" class="img-result">
 <span class="caption"><span>"Mr. Holmes"</span></span>
 </div>
 
 <div class="results" id="result_saintlaurent">
-<img src="flow-imgs/ysl.jpeg" class="img-result">
+<img src="/images/web/flow-imgs/ysl.jpeg" class="img-result">
 <span class="caption"><span>"Saint Laurent"</span></span>
 </div>
 
 <div class="results" id="result_paper">
-<img src="flow-imgs/paper.jpeg" class="img-result">
+<img src="/images/web/flow-imgs/paper.jpeg" class="img-result">
 <span class="caption"><span>"Paper Towns"</span></span>
 </div>
 
 <div class="results" id="result_sanandreas">
-<img src="flow-imgs/sanandreas.jpeg" class="img-result">
+<img src="/images/web/flow-imgs/sanandreas.jpeg" class="img-result">
 <span class="caption"><span>"San Andreas"</span></span>
 </div>
 
@@ -856,13 +856,15 @@ span.caption span {
 <script type="text/javascript" language="JavaScript"><!--
 
 function ShowContent(d) {
+document.getElementById(d).style.visibility = "visible";
 document.getElementById(d).style.opacity = "1";
+
 }
 $(document).ready(function(){
     $("#showall").click(function(){
-        $(".results").css({"visibility": "visible"});
-        $(".question").css({"visibility": "visible"});
-        $(".reply").css({"visibility": "visible"});
+        $(".results").css({"visibility": "visible", "opacity": "1" });
+        $(".qanda").css({"visibility": "visible", "opacity": "1" });
+        // $(".reply").css({"visibility": "visible", "opacity": "1" });
 
     });
 });
