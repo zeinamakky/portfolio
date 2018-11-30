@@ -50,10 +50,18 @@ a {
 
 ///////////////// navbar ////////////////////
 .navbar {
+  background-color: white;
   border-bottom: 1px solid $type-color-secondary;
   font-family: $font-sans;
   font-weight: 600;
   text-transform: uppercase;
+  z-index: 20;
+}
+.navbar-sticky {
+  position: fixed;
+  top: 0;
+  margin-left:10px;
+  width: calc(100% - 36px - 2rem);
 }
 .navbar-menu-open {
   display: inline-block;
