@@ -233,8 +233,16 @@ win.scroll(function(event) {
       el.addClass("reveal"); 
     } 
   });
-  
+  if (win.scrollTop() > $('.navbar').offset().top) {
+      $('.navbar').addClass('navbar-sticky');
+  } else if (win.scrollTop() < 34) {
+      $('.navbar').removeClass('navbar-sticky');
+      console.log('werwrew');
+  }
 });
+
+
+
 </script>  
 <script type="text/javascript" src="/javascripts/lazyframe.min.js"></script>
 <script>
