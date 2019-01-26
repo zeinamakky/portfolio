@@ -1,0 +1,43 @@
+---
+layout: inside
+title: austen heroes
+
+---
+<!-- <table>
+<tbody>
+  <%n = 0 %>
+  <% 10.times do %>
+
+  <tr>
+    <% 10.times do %>
+
+      <td width="30" id="<%= n += 1 %>" style="border:1px solid black" height="30">
+        <%= n %>
+      </td>
+    <% end %>
+  </tr>
+  <% end %>
+
+</tbody>
+</table> -->
+
+<dl class="graph">
+  <% x = 0 %>
+  <% 100.times do %>
+
+    <dt class="position<%= x %>">
+        <% data.austenheroes.each do |hero| %>
+          <% position = hero.poor.to_s + hero.good.to_s %>
+          <% position = position.to_i %>
+          <% if position == x %>
+            <p class="graph-element pic-<%= hero.code if hero.code%>">&bull;</p>
+          
+          <% end %>
+        <% end %>
+
+        <% x += 1 %>
+
+      
+    </dt>
+  <% end %>
+</dl>

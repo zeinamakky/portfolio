@@ -1,0 +1,11 @@
+$list: henry_tilney captain_tilney darcy charles_bingley
+
+=austenheroes-images 
+  @each $hero in $list 
+    .photo-#{$hero}:before 
+      content: image-url("/images/print/austen/#{$hero}.png") no-repeat
+
+
+
+.graph-element 
+  +austenheroes-images 

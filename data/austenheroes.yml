@@ -1,0 +1,106 @@
+- name: Henry Tilney
+  code: henry-tilney
+  good: 8
+  poor: 4
+  novel: Northanger Abbey
+  partner: Catherine Moreland
+  img: /images/web/austen/henry-tilney.png
+
+
+- name: John Thorpe
+  code: john-thorpe
+  good: 1
+  poor: 8
+  novel: Northanger Abbey
+  partner: Catherine Moreland
+  img: /images/web/austen/john-thorpe.png
+
+- name: Fitzwilliam Darcy
+  code: darcy
+  good: 7
+  poor: 0
+  novel: Pride &amp; Prejudice
+  partner: Elizabeth Bennet
+  img: /images/web/austen/darcy.png
+
+- name: Charles Bingley
+  code: charles-bingley
+  good: 9
+  poor: 2
+  novel: Pride amp; Prejudice
+  partner: Jane Bennet
+  img: /images/web/austen/charles-bingley.png
+
+- name: George Wickham
+  code: wickham
+  good: 0
+  poor: 9
+  novel: Pride amp; Prejudice
+  partner: Lydia Bennet
+  img: /images/web/austen/wickham.png
+
+
+- name: Edward Ferrars
+  code: edward-ferrars
+  good: 6
+  poor: 4
+  novel: Sense &amp; Sensibility
+  partner: Elinor Dashwood
+  img: /images/web/austen/edward-ferrars.png
+
+- name: Willoughby
+  code: willoughby
+  good: 3
+  poor: 3
+  novel: Sense &amp; Sensibility
+  partner: Marianne Dashwood
+  img: /images/web/austen/willoughby.png
+
+- name: Edmund Bertram
+  code: edmund-bertram
+  good: 7
+  poor: 5
+  novel: Mansfield Park
+  partner: Fanny Price
+  img: /images/web/austen/edmund-bertram.png
+
+- name: Henry Crawford
+  code: henry-crawford
+  good: 2
+  poor: 3
+  novel: Mansfield Park
+  partner: Maria Rushworth
+  img: /images/web/austen/henry-crawford.png
+
+- name: Captain Wentworth
+  code: wentworth
+  good: 7
+  poor: 1
+  novel: Persuasion
+  partner: Anne Elliott
+  img: /images/web/austen/wentworth.png
+
+- name: William Elliott
+  code: william-elliott
+  good: 0
+  poor: 8
+  novel: Persuasion
+  partner: Mrs Clay
+  img: /images/web/austen/william-elliott.png
+
+- name: George Knightley
+  code: george-knightley
+  good: 8
+  poor: 0
+  novel: Emma
+  partner: Emma Woodhouse
+  img: /images/web/austen/george-knightley.png
+
+- name: Frank Churchill
+  code: frank-churchill
+  good: 3
+  poor: 4
+  novel: Persuasion
+  partner: Jane Fairfax
+  img: /images/web/austen/frank-churchill.png
+

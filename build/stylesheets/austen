@@ -1,0 +1,8 @@
+.graph-element .photo-henry_tilney:before {
+  content: url("/images/print/austen/henry_tilney.png") no-repeat; }
+.graph-element .photo-captain_tilney:before {
+  content: url("/images/print/austen/captain_tilney.png") no-repeat; }
+.graph-element .photo-darcy:before {
+  content: url("/images/print/austen/darcy.png") no-repeat; }
+.graph-element .photo-charles_bingley:before {
+  content: url("/images/print/austen/charles_bingley.png") no-repeat; }

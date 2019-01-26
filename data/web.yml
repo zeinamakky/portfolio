@@ -1,17 +1,17 @@
 - title: 2018 PAEA Education Forum Conference Website
   img_url: 2018forum.jpg
   caption: Website for PAEA's annual conference. Built in Middleman, using CSS Grid, list.js for some of the sorting, lunr.js for the search function.
-  link_url: https://forum.paeaonline.org
+  link_url: http://forum.paeaonline.org
 
 - title: 2016 Annual Report Website
   img_url: 2016review.jpg
   caption: Website for PAEA's annual report. Built in Middleman with Bootstrap. This was the first online annual report PAEA had done.
-  link_url: https://2016review.paeaonline.org
+  link_url: http://2016review.paeaonline.org
 
 - title: 2017 PAEA Education Forum Conference Website
   img_url: 2017forum.jpg
   caption: Built in Middleman, using Bootstrap, lunr.js for the search function.
-  link_url: https://2017forum.paeaonline.org
+  link_url: http://2017forum.paeaonline.org
 
 - title: Soccer Watch
   video_url: https://www.youtube.com/watch?v=bDonCu2cwzI

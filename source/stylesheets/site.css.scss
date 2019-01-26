@@ -338,7 +338,94 @@ input.btn-submit {
     grid-template-columns: 2fr 1fr;
     grid-gap: 40px;
   }
+}
+dl { 
+  font-size: 0;
+  width: 501px;
+  height: 501px;
+  background-size: 50px 50px;
+  background-image: linear-gradient(to right, grey 1px, transparent 1px), linear-gradient(to bottom, grey 1px, transparent 1px);
+  position: relative;
+}
+dt {
+display: inline-block;
+font-size: 20px;
+width:50px;
+height: 50px;
+text-align:center;
+vertical-align:middle;
+position:relative;
+}
+.position59:after {
+    content: "GOOD";
+    margin-top: -10px;
+    display: block;
+    width: 120px;
+    text-align: right; 
+}
+.position50:after {
+    content: "EVIL";
+    margin-top: -10px;
+    display: block;
+    width: 120px;
+    margin-left: -50px;
+    text-align: left; 
+}
+.position4:after {
+    content: "RICH";
+    margin-top: -25px;
+    display: block;
+    width: 100px;
+    text-align: center; 
+}
+.position94:after {
+    content: "POOR";
+    margin-top: 50px;
+    display: block;
+    width: 100px;
+    text-align: center; 
+}
 
-
+dt[class$="4"] {
+  border-right: 1px solid red;
+}
+dt[class^="position4"] {
+  border-bottom: 1px solid red;
+}
+dt.position4 {
+  border-bottom: none;
 
 }
+// .position9:before {
+//     content: url("/images/web/austen/henry-tilney.jpg");
+// }
+$list: henry-tilney john-thorpe darcy charles-bingley wickham
+wentworth william-elliott frank-churchill george-knightley
+edmund-bertram henry-crawford edward-ferrars willoughby;
+
+@mixin austenheroes-images {
+  @each $hero in $list {
+    .pic-#{$hero} {
+      &:before {
+      background-image: url("/images/web/austen/#{$hero}.png");
+      background-size: auto 75px;
+      background-repeat: no-repeat;
+      background-position: bottom center;
+
+      content: "";
+      position: absolute;
+      z-index:20;
+      top: -50px;
+      left: -25px;
+      width: 75px;
+      height: 75px;
+
+      }
+    }
+  }
+}
+
+  @include austenheroes-images;
+
+
+  
