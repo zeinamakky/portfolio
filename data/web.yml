@@ -1,3 +1,8 @@
+- title: 2018 PAEA Annual Report Website
+  img_url: 2018report.jpg
+  caption: Website for PAEA's 2018 annual report. Built in Middleman with Bootstrap 4. 
+  link_url: http://2018annualreport.paeaonline.org
+
 - title: 2018 PAEA Education Forum Conference Website
   img_url: 2018forum.jpg
   caption: Website for PAEA's annual conference. Built in Middleman, using CSS Grid, list.js for some of the sorting, lunr.js for the search function.
